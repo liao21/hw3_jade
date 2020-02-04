@@ -1,0 +1,110 @@
+<!-- Hayden Liao -->
+<!-- hw2 -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./stylesheets/liao21_styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Cheesecake Factory</title>
+  </head>
+
+  <body>
+    <div id="content_wrapper" class="cool_border">
+      <div id="image_box">
+        <h1 class="underlined">Cheesecake Order Form</h1>
+        &nbsp;&nbsp;&nbsp;
+        <img id="image_cheesecake" src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg"
+          alt="Cheesecake_with_strawberry_sauce"
+          style="width:150px; height:150px;" />
+      </div>
+
+      <!-- <table width = "50%" border = "0"> -->
+      <div class="order_form">
+        <table>
+          <tr>
+            <!-- <td colspan="2" bgcolor="#aa00aa">Quantity</td> -->
+            <td class="underlined">Quantity</td>
+            <td class="underlined">Topping</td>
+          </tr>
+          <tr>
+
+            <!-- quantity drop down menu -->
+            <td>
+                <select id="quantity" class="select-css">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+            </td>
+
+            <!-- topping radio buttons for -->
+            <td>
+              <form action="" id="topping">
+                <input type="radio" name="topping" value="plain">Plain<br>
+                <input type="radio" name="topping" value="cherry">Cherry<br>
+                <input type="radio" name="topping" value="chocolate">Chocolate
+              </form>
+            </td>
+          </tr>
+        </table>
+
+        Notes:
+        <br>
+        <!-- notes textarea -->
+        <textarea id="textarea_order_details" name="name" rows="4" cols="50" placeholder="Enter any special instructions here."></textarea>
+        <br><br>
+        <!-- order button -->
+        <button id="button_submit_order" onclick="submitOrder()">Order</button>
+        <script src = "javascripts/submit_order.js">  </script>
+
+      </div>
+      <h2 id="successful_order_message"></h2>
+      <p id="order_details"></p>
+    </div>
+
+<!-- Good reference for dropdown menu modification: https://www.bitdegree.org/learn/css-dropdown-menu -->
+
+  <!-- separate box for last month's order -->
+  <div id="previous_orders" class="cool_border">
+
+  <!-- Significant credit should be given to Philip Robinson for help with formatting the dropdown stuff below-->
+
+    <span class="dropdown_container">
+      <div id="dropdown_label">Jan</div>
+      <div class="dropdown_scroll">
+        <div class="dropdown_item">Jan</div>
+        <div class="dropdown_item">Feb</div>
+        <div class="dropdown_item">Mar</div>
+        <div class="dropdown_item">Apr</div>
+        <div class="dropdown_item">May</div>
+        <div class="dropdown_item">Jun</div>
+        <div class="dropdown_item">Jul</div>
+        <div class="dropdown_item">Aug</div>
+        <div class="dropdown_item">Sep</div>
+        <div class="dropdown_item">Oct</div>
+        <div class="dropdown_item">Nov</div>
+        <div class="dropdown_item">Dec</div>
+      </div>
+    </span>
+
+    <script src="javascripts/select_dropdown.js"></script>
+
+      <!-- last month's order data -->
+      <ul>
+        <li>11 cherry</li>
+        <li>17 chocolate</li>
+        <li>31 plain</li>
+      </ul>
+    </div>
+  </div>
+</body>

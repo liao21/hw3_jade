@@ -1,0 +1,128 @@
+/* Hayden Liao */
+/* hw2 */
+body{
+  /* background blue */
+  background-color: rgb(120, 120, 255);
+  outline-width: thick;
+  outline-color: rgb(0,0,0);
+  text-align: center;
+  text-decoration-style: wavy;
+  font-family: 'Amatic SC', cursive;
+  font-size: 28px;
+}
+
+#content_wrapper{
+  width: 66%;
+  background-color: rgba(255,255,170,1);
+}
+
+table{
+  border: rgb(0, 0, 0);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#image_cheesecake{
+  margin: 10px;
+  border-radius: 10px;
+  border-color: black;
+  border-width: thin;
+  border-style: solid;
+}
+
+#image_box{
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-flex;
+  font-family: 'Indie Flower', cursive;
+}
+
+#textarea_order_details{
+  border-radius: 8px;
+  margin-top: 10px;
+  font-family: 'Indie Flower', cursive;
+  background-color: #eee;
+}
+
+#button_submit_order{
+  width: auto;
+  height: auto;
+  font-size: 28px;
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+#previous_orders_title{
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+#previous_orders{
+  background-color: rgba(255, 255, 170);
+  position: fixed;
+  margin-left: 0px;
+  right: 10px;
+  top: 21%;
+  padding: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 20%;
+}
+
+.cool_border{
+  box-shadow: 10px 5px 10px rgba(100, 100, 100, 1);
+  border-width: 10px;
+  border-style: groove;
+
+  border-radius: 30px;
+  margin: 20px;
+}
+
+.underlined{
+  text-decoration: underline;
+}
+
+/* most of hw2 css is below */
+.dropdown_container{
+  display: inline-block;
+}
+
+.dropdown_container:hover .dropdown_scroll{
+  display: block;
+}
+
+#dropdown_label{
+  background-color: #77c;
+  width: 100px;
+  margin: auto;
+  border-radius: 8px;
+  /* box-shadow: 0 0 1px 3px rgba(0, 0, 255, 1); */
+  box-shadow: 0 0 1px 3px rgba(60, 60, 120, .7);
+}
+
+#dropdown_label:hover {
+  background-color: #ccf;
+}
+
+.dropdown_scroll{
+  display: none;
+  position: absolute;
+  margin: auto;
+  width: 100px;
+  overflow: auto;
+  height: 120px;
+  border-radius: 8px;
+}
+
+.dropdown_item{
+    background-color: #aac
+}
+
+.dropdown_item:hover {
+    background-color: #559
+
+}

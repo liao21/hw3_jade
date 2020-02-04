@@ -1,3 +1,5 @@
+// Hayden Liao
+
 function submitOrder(){
   var order_details = document.getElementById("textarea_order_details").value;
   var is_vegan = order_details.search("vegan") != -1;
